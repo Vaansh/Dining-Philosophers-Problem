@@ -1,7 +1,5 @@
 # Just a makefile to save some typing :-)
-# Serguei A. Mokhov, mokhov@cs.concordia.ca
-# PA3
-# Use gmake.
+# Use gmake/make.
 
 JAVAC=javac
 JFLAGS=-g
