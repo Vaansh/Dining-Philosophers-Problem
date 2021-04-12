@@ -1,0 +1,683 @@
+➜ make -f Makefile regression
+
+Dining Philosophers Application has been built.
+3 philosopher(s) came in for a dinner.
+Philosopher (ID: 1) has started eating.
+Philosopher (ID: 1) is done eating.
+Philosopher (ID: 2) has started eating.
+Philosopher (ID: 1) has started thinking.
+Philosopher (ID: 1) is done thinking.
+Philosopher (ID: 1) has started talking.
+Philosopher 1 says: Eh, it's not easy to be a philosopher: eat, think, talk, eat...
+Philosopher (ID: 1) is done talking.
+Philosopher (ID: 2) is done eating.
+Philosopher (ID: 2) has started thinking.
+Philosopher (ID: 3) has started eating.
+Philosopher (ID: 3) is done eating.
+Philosopher (ID: 3) has started thinking.
+Philosopher (ID: 1) has started eating.
+Philosopher (ID: 3) is done thinking.
+Philosopher (ID: 2) is done thinking.
+Philosopher (ID: 2) has started talking.
+Philosopher 2 says: 2 + 2 = 5 for extremely large values of 2...
+Philosopher (ID: 2) is done talking.
+Philosopher (ID: 1) is done eating.
+Philosopher (ID: 1) has started thinking.
+Philosopher (ID: 3) has started eating.
+Philosopher (ID: 3) is done eating.
+Philosopher (ID: 3) has started thinking.
+Philosopher (ID: 2) has started eating.
+Philosopher (ID: 1) is done thinking.
+Philosopher (ID: 1) has started talking.
+Philosopher 1 says: If thee cannot speak, thee must be silent
+Philosopher (ID: 1) is done talking.
+Philosopher (ID: 2) is done eating.
+Philosopher (ID: 2) has started thinking.
+Philosopher (ID: 1) has started eating.
+Philosopher (ID: 3) is done thinking.
+Philosopher (ID: 1) is done eating.
+Philosopher (ID: 1) has started thinking.
+Philosopher (ID: 3) has started eating.
+Philosopher (ID: 2) is done thinking.
+Philosopher (ID: 1) is done thinking.
+Philosopher (ID: 3) is done eating.
+Philosopher (ID: 3) has started thinking.
+Philosopher (ID: 2) has started eating.
+Philosopher (ID: 2) is done eating.
+Philosopher (ID: 2) has started thinking.
+Philosopher (ID: 1) has started eating.
+Philosopher (ID: 2) is done thinking.
+Philosopher (ID: 2) has started talking.
+Philosopher 2 says: If thee cannot speak, thee must be silent
+Philosopher (ID: 2) is done talking.
+Philosopher (ID: 1) is done eating.
+Philosopher (ID: 1) has started thinking.
+Philosopher (ID: 2) has started eating.
+Philosopher (ID: 3) is done thinking.
+Philosopher (ID: 1) is done thinking.
+Philosopher (ID: 1) has started talking.
+Philosopher 1 says: If thee cannot speak, thee must be silent
+Philosopher (ID: 1) is done talking.
+Philosopher (ID: 2) is done eating.
+Philosopher (ID: 2) has started thinking.
+Philosopher (ID: 1) has started eating.
+Philosopher (ID: 1) is done eating.
+Philosopher (ID: 1) has started thinking.
+Philosopher (ID: 3) has started eating.
+Philosopher (ID: 2) is done thinking.
+Philosopher (ID: 2) has started talking.
+Philosopher 2 says: You know, true is false and false is true if you think of it
+Philosopher (ID: 2) is done talking.
+Philosopher (ID: 1) is done thinking.
+Philosopher (ID: 1) has started talking.
+Philosopher 1 says: If thee cannot speak, thee must be silent
+Philosopher (ID: 1) is done talking.
+Philosopher (ID: 3) is done eating.
+Philosopher (ID: 3) has started thinking.
+Philosopher (ID: 2) has started eating.
+Philosopher (ID: 2) is done eating.
+Philosopher (ID: 2) has started thinking.
+Philosopher (ID: 1) has started eating.
+Philosopher (ID: 3) is done thinking.
+Philosopher (ID: 1) is done eating.
+Philosopher (ID: 1) has started thinking.
+Philosopher (ID: 3) has started eating.
+Philosopher (ID: 2) is done thinking.
+Philosopher (ID: 1) is done thinking.
+Philosopher (ID: 3) is done eating.
+Philosopher (ID: 3) has started thinking.
+Philosopher (ID: 2) has started eating.
+Philosopher (ID: 2) is done eating.
+Philosopher (ID: 2) has started thinking.
+Philosopher (ID: 1) has started eating.
+Philosopher (ID: 3) is done thinking.
+Philosopher (ID: 2) is done thinking.
+Philosopher (ID: 2) has started talking.
+Philosopher 2 says: 2 + 2 = 5 for extremely large values of 2...
+Philosopher (ID: 2) is done talking.
+Philosopher (ID: 1) is done eating.
+Philosopher (ID: 1) has started thinking.
+Philosopher (ID: 2) has started eating.
+Philosopher (ID: 1) is done thinking.
+Philosopher (ID: 2) is done eating.
+Philosopher (ID: 2) has started thinking.
+Philosopher (ID: 3) has started eating.
+Philosopher (ID: 2) is done thinking.
+Philosopher (ID: 2) has started talking.
+Philosopher 2 says: My number is 2
+Philosopher (ID: 2) is done talking.
+Philosopher (ID: 3) is done eating.
+Philosopher (ID: 3) has started thinking.
+Philosopher (ID: 1) has started eating.
+Philosopher (ID: 3) is done thinking.
+Philosopher (ID: 3) has started talking.
+Philosopher 3 says: If thee cannot speak, thee must be silent
+Philosopher (ID: 3) is done talking.
+Philosopher (ID: 1) is done eating.
+Philosopher (ID: 1) has started thinking.
+Philosopher (ID: 2) has started eating.
+Philosopher (ID: 2) is done eating.
+Philosopher (ID: 2) has started thinking.
+Philosopher (ID: 3) has started eating.
+Philosopher (ID: 2) is done thinking.
+Philosopher (ID: 1) is done thinking.
+Philosopher (ID: 1) has started talking.
+Philosopher 1 says: You know, true is false and false is true if you think of it
+Philosopher (ID: 1) is done talking.
+Philosopher (ID: 3) is done eating.
+Philosopher (ID: 3) has started thinking.
+Philosopher (ID: 2) has started eating.
+Philosopher (ID: 3) is done thinking.
+Philosopher (ID: 2) is done eating.
+Philosopher (ID: 2) has started thinking.
+Philosopher (ID: 1) has started eating.
+Philosopher (ID: 2) is done thinking.
+Philosopher (ID: 2) has started talking.
+Philosopher 2 says: If thee cannot speak, thee must be silent
+Philosopher (ID: 2) is done talking.
+Philosopher (ID: 1) is done eating.
+Philosopher (ID: 1) has started thinking.
+Philosopher (ID: 3) has started eating.
+Philosopher (ID: 3) is done eating.
+Philosopher (ID: 3) has started thinking.
+Philosopher (ID: 2) has started eating.
+Philosopher (ID: 3) is done thinking.
+Philosopher (ID: 1) is done thinking.
+Philosopher (ID: 1) has started talking.
+Philosopher 1 says: You know, true is false and false is true if you think of it
+Philosopher (ID: 1) is done talking.
+Philosopher (ID: 2) is done eating.
+Philosopher (ID: 2) has started thinking.
+Philosopher (ID: 1) has started eating.
+Philosopher (ID: 1) is done eating.
+Philosopher (ID: 1) has started thinking.
+Philosopher (ID: 3) has started eating.
+Philosopher (ID: 1) is done thinking.
+Philosopher (ID: 1) has started talking.
+Philosopher 1 says: My number is 1
+Philosopher (ID: 1) is done talking.
+Philosopher (ID: 2) is done thinking.
+Philosopher (ID: 2) has started talking.
+Philosopher 2 says: My number is 2
+Philosopher (ID: 2) is done talking.
+Philosopher (ID: 3) is done eating.
+Philosopher (ID: 3) has started thinking.
+Philosopher (ID: 3) is done thinking.
+Philosopher (ID: 3) has started eating.
+Philosopher (ID: 3) is done eating.
+Philosopher (ID: 3) has started thinking.
+Philosopher (ID: 3) is done thinking.
+Philosopher (ID: 3) has started talking.
+Philosopher 3 says: You know, true is false and false is true if you think of it
+Philosopher (ID: 3) is done talking.
+All philosophers have left. System terminates normally.
+
+4 philosopher(s) came in for a dinner.
+Philosopher (ID: 1) has started eating.
+Philosopher (ID: 1) is done eating.
+Philosopher (ID: 2) has started eating.
+Philosopher (ID: 1) has started thinking.
+Philosopher (ID: 2) is done eating.
+Philosopher (ID: 2) has started thinking.
+Philosopher (ID: 4) has started eating.
+Philosopher (ID: 1) is done thinking.
+Philosopher (ID: 4) is done eating.
+Philosopher (ID: 4) has started thinking.
+Philosopher (ID: 3) has started eating.
+Philosopher (ID: 2) is done thinking.
+Philosopher (ID: 4) is done thinking.
+Philosopher (ID: 4) has started talking.
+Philosopher 4 says: If thee cannot speak, thee must be silent
+Philosopher (ID: 4) is done talking.
+Philosopher (ID: 3) is done eating.
+Philosopher (ID: 3) has started thinking.
+Philosopher (ID: 4) has started eating.
+Philosopher (ID: 4) is done eating.
+Philosopher (ID: 4) has started thinking.
+Philosopher (ID: 2) has started eating.
+Philosopher (ID: 4) is done thinking.
+Philosopher (ID: 2) is done eating.
+Philosopher (ID: 2) has started thinking.
+Philosopher (ID: 1) has started eating.
+Philosopher (ID: 3) is done thinking.
+Philosopher (ID: 1) is done eating.
+Philosopher (ID: 1) has started thinking.
+Philosopher (ID: 4) has started eating.
+Philosopher (ID: 2) is done thinking.
+Philosopher (ID: 4) is done eating.
+Philosopher (ID: 4) has started thinking.
+Philosopher (ID: 3) has started eating.
+Philosopher (ID: 1) is done thinking.
+Philosopher (ID: 3) is done eating.
+Philosopher (ID: 3) has started thinking.
+Philosopher (ID: 2) has started eating.
+Philosopher (ID: 4) is done thinking.
+Philosopher (ID: 4) has started talking.
+Philosopher 4 says: If thee cannot speak, thee must be silent
+Philosopher (ID: 4) is done talking.
+Philosopher (ID: 2) is done eating.
+Philosopher (ID: 2) has started thinking.
+Philosopher (ID: 1) has started eating.
+Philosopher (ID: 3) is done thinking.
+Philosopher (ID: 3) has started talking.
+Philosopher 3 says: You know, true is false and false is true if you think of it
+Philosopher (ID: 3) is done talking.
+Philosopher (ID: 1) is done eating.
+Philosopher (ID: 1) has started thinking.
+Philosopher (ID: 4) has started eating.
+Philosopher (ID: 2) is done thinking.
+Philosopher (ID: 2) has started talking.
+Philosopher 2 says: 2 + 2 = 5 for extremely large values of 2...
+Philosopher (ID: 2) is done talking.
+Philosopher (ID: 4) is done eating.
+Philosopher (ID: 4) has started thinking.
+Philosopher (ID: 3) has started eating.
+Philosopher (ID: 1) is done thinking.
+Philosopher (ID: 1) has started talking.
+Philosopher 1 says: If thee cannot speak, thee must be silent
+Philosopher (ID: 1) is done talking.
+Philosopher (ID: 3) is done eating.
+Philosopher (ID: 3) has started thinking.
+Philosopher (ID: 2) has started eating.
+Philosopher (ID: 3) is done thinking.
+Philosopher (ID: 4) is done thinking.
+Philosopher (ID: 4) has started talking.
+Philosopher 4 says: Eh, it's not easy to be a philosopher: eat, think, talk, eat...
+Philosopher (ID: 4) is done talking.
+Philosopher (ID: 2) is done eating.
+Philosopher (ID: 2) has started thinking.
+Philosopher (ID: 1) has started eating.
+Philosopher (ID: 2) is done thinking.
+Philosopher (ID: 2) has started talking.
+Philosopher 2 says: 2 + 2 = 5 for extremely large values of 2...
+Philosopher (ID: 2) is done talking.
+Philosopher (ID: 1) is done eating.
+Philosopher (ID: 1) has started thinking.
+Philosopher (ID: 3) has started eating.
+Philosopher (ID: 3) is done eating.
+Philosopher (ID: 3) has started thinking.
+Philosopher (ID: 2) has started eating.
+Philosopher (ID: 1) is done thinking.
+Philosopher (ID: 2) is done eating.
+Philosopher (ID: 2) has started thinking.
+Philosopher (ID: 4) has started eating.
+Philosopher (ID: 3) is done thinking.
+Philosopher (ID: 3) has started talking.
+Philosopher 3 says: My number is 3
+Philosopher (ID: 3) is done talking.
+Philosopher (ID: 2) is done thinking.
+Philosopher (ID: 2) has started talking.
+Philosopher 2 says: Eh, it's not easy to be a philosopher: eat, think, talk, eat...
+Philosopher (ID: 2) is done talking.
+Philosopher (ID: 4) is done eating.
+Philosopher (ID: 4) has started thinking.
+Philosopher (ID: 2) has started eating.
+Philosopher (ID: 4) is done thinking.
+Philosopher (ID: 4) has started talking.
+Philosopher 4 says: Eh, it's not easy to be a philosopher: eat, think, talk, eat...
+Philosopher (ID: 4) is done talking.
+Philosopher (ID: 2) is done eating.
+Philosopher (ID: 2) has started thinking.
+Philosopher (ID: 1) has started eating.
+Philosopher (ID: 1) is done eating.
+Philosopher (ID: 1) has started thinking.
+Philosopher (ID: 3) has started eating.
+Philosopher (ID: 1) is done thinking.
+Philosopher (ID: 2) is done thinking.
+Philosopher (ID: 3) is done eating.
+Philosopher (ID: 3) has started thinking.
+Philosopher (ID: 4) has started eating.
+Philosopher (ID: 4) is done eating.
+Philosopher (ID: 4) has started thinking.
+Philosopher (ID: 2) has started eating.
+Philosopher (ID: 4) is done thinking.
+Philosopher (ID: 4) has started talking.
+Philosopher 4 says: You know, true is false and false is true if you think of it
+Philosopher (ID: 4) is done talking.
+Philosopher (ID: 2) is done eating.
+Philosopher (ID: 2) has started thinking.
+Philosopher (ID: 1) has started eating.
+Philosopher (ID: 3) is done thinking.
+Philosopher (ID: 3) has started talking.
+Philosopher 3 says: If thee cannot speak, thee must be silent
+Philosopher (ID: 3) is done talking.
+Philosopher (ID: 2) is done thinking.
+Philosopher (ID: 1) is done eating.
+Philosopher (ID: 1) has started thinking.
+Philosopher (ID: 4) has started eating.
+Philosopher (ID: 1) is done thinking.
+Philosopher (ID: 4) is done eating.
+Philosopher (ID: 4) has started thinking.
+Philosopher (ID: 2) has started eating.
+Philosopher (ID: 4) is done thinking.
+Philosopher (ID: 4) has started talking.
+Philosopher 4 says: My number is 4
+Philosopher (ID: 4) is done talking.
+Philosopher (ID: 2) is done eating.
+Philosopher (ID: 2) has started thinking.
+Philosopher (ID: 4) has started eating.
+Philosopher (ID: 4) is done eating.
+Philosopher (ID: 4) has started thinking.
+Philosopher (ID: 3) has started eating.
+Philosopher (ID: 2) is done thinking.
+Philosopher (ID: 2) has started talking.
+Philosopher 2 says: My number is 2
+Philosopher (ID: 2) is done talking.
+Philosopher (ID: 3) is done eating.
+Philosopher (ID: 3) has started thinking.
+Philosopher (ID: 1) has started eating.
+Philosopher (ID: 1) is done eating.
+Philosopher (ID: 1) has started thinking.
+Philosopher (ID: 2) has started eating.
+Philosopher (ID: 3) is done thinking.
+Philosopher (ID: 4) is done thinking.
+Philosopher (ID: 4) has started talking.
+Philosopher 4 says: You know, true is false and false is true if you think of it
+Philosopher (ID: 4) is done talking.
+Philosopher (ID: 1) is done thinking.
+Philosopher (ID: 1) has started talking.
+Philosopher 1 says: My number is 1
+Philosopher (ID: 1) is done talking.
+Philosopher (ID: 2) is done eating.
+Philosopher (ID: 2) has started thinking.
+Philosopher (ID: 3) has started eating.
+Philosopher (ID: 3) is done eating.
+Philosopher (ID: 3) has started thinking.
+Philosopher (ID: 1) has started eating.
+Philosopher (ID: 2) is done thinking.
+Philosopher (ID: 3) is done thinking.
+Philosopher (ID: 3) has started talking.
+Philosopher 3 says: My number is 3
+Philosopher (ID: 3) is done talking.
+Philosopher (ID: 1) is done eating.
+Philosopher (ID: 1) has started thinking.
+Philosopher (ID: 4) has started eating.
+Philosopher (ID: 1) is done thinking.
+Philosopher (ID: 4) is done eating.
+Philosopher (ID: 4) has started thinking.
+Philosopher (ID: 2) has started eating.
+Philosopher (ID: 2) is done eating.
+Philosopher (ID: 2) has started thinking.
+Philosopher (ID: 1) has started eating.
+Philosopher (ID: 4) is done thinking.
+Philosopher (ID: 2) is done thinking.
+Philosopher (ID: 2) has started talking.
+Philosopher 2 says: My number is 2
+Philosopher (ID: 2) is done talking.
+Philosopher (ID: 1) is done eating.
+Philosopher (ID: 1) has started thinking.
+Philosopher (ID: 3) has started eating.
+Philosopher (ID: 3) is done eating.
+Philosopher (ID: 3) has started thinking.
+Philosopher (ID: 4) has started eating.
+Philosopher (ID: 1) is done thinking.
+Philosopher (ID: 1) has started talking.
+Philosopher 1 says: 2 + 2 = 5 for extremely large values of 2...
+Philosopher (ID: 1) is done talking.
+Philosopher (ID: 3) is done thinking.
+Philosopher (ID: 3) has started talking.
+Philosopher 3 says: 2 + 2 = 5 for extremely large values of 2...
+Philosopher (ID: 3) is done talking.
+Philosopher (ID: 4) is done eating.
+Philosopher (ID: 4) has started thinking.
+Philosopher (ID: 1) has started eating.
+Philosopher (ID: 4) is done thinking.
+Philosopher (ID: 1) is done eating.
+Philosopher (ID: 1) has started thinking.
+Philosopher (ID: 3) has started eating.
+Philosopher (ID: 3) is done eating.
+Philosopher (ID: 3) has started thinking.
+Philosopher (ID: 1) is done thinking.
+Philosopher (ID: 1) has started talking.
+Philosopher 1 says: You know, true is false and false is true if you think of it
+Philosopher (ID: 1) is done talking.
+Philosopher (ID: 3) is done thinking.
+Philosopher (ID: 3) has started talking.
+Philosopher 3 says: You know, true is false and false is true if you think of it
+Philosopher (ID: 3) is done talking.
+Philosopher (ID: 3) has started eating.
+Philosopher (ID: 3) is done eating.
+Philosopher (ID: 3) has started thinking.
+Philosopher (ID: 3) is done thinking.
+All philosophers have left. System terminates normally.
+Philosopher (ID: 1) has started eating.
+
+5 philosopher(s) came in for a dinner.
+Philosopher (ID: 1) is done eating.
+Philosopher (ID: 2) has started eating.
+Philosopher (ID: 1) has started thinking.
+Philosopher (ID: 2) is done eating.
+Philosopher (ID: 2) has started thinking.
+Philosopher (ID: 5) has started eating.
+Philosopher (ID: 2) is done thinking.
+Philosopher (ID: 2) has started talking.
+Philosopher 2 says: 2 + 2 = 5 for extremely large values of 2...
+Philosopher (ID: 2) is done talking.
+Philosopher (ID: 5) is done eating.
+Philosopher (ID: 5) has started thinking.
+Philosopher (ID: 3) has started eating.
+Philosopher (ID: 1) is done thinking.
+Philosopher (ID: 1) has started talking.
+Philosopher 1 says: 2 + 2 = 5 for extremely large values of 2...
+Philosopher (ID: 1) is done talking.
+Philosopher (ID: 3) is done eating.
+Philosopher (ID: 3) has started thinking.
+Philosopher (ID: 4) has started eating.
+Philosopher (ID: 3) is done thinking.
+Philosopher (ID: 3) has started talking.
+Philosopher 3 says: If thee cannot speak, thee must be silent
+Philosopher (ID: 3) is done talking.
+Philosopher (ID: 5) is done thinking.
+Philosopher (ID: 5) has started talking.
+Philosopher 5 says: You know, true is false and false is true if you think of it
+Philosopher (ID: 5) is done talking.
+Philosopher (ID: 4) is done eating.
+Philosopher (ID: 4) has started thinking.
+Philosopher (ID: 1) has started eating.
+Philosopher (ID: 1) is done eating.
+Philosopher (ID: 1) has started thinking.
+Philosopher (ID: 5) has started eating.
+Philosopher (ID: 4) is done thinking.
+Philosopher (ID: 1) is done thinking.
+Philosopher (ID: 5) is done eating.
+Philosopher (ID: 5) has started thinking.
+Philosopher (ID: 2) has started eating.
+Philosopher (ID: 2) is done eating.
+Philosopher (ID: 2) has started thinking.
+Philosopher (ID: 1) has started eating.
+Philosopher (ID: 1) is done eating.
+Philosopher (ID: 1) has started thinking.
+Philosopher (ID: 3) has started eating.
+Philosopher (ID: 3) is done eating.
+Philosopher (ID: 4) has started eating.
+Philosopher (ID: 3) has started thinking.
+Philosopher (ID: 3) is done thinking.
+Philosopher (ID: 4) is done eating.
+Philosopher (ID: 4) has started thinking.
+Philosopher (ID: 3) has started eating.
+Philosopher (ID: 5) is done thinking.
+Philosopher (ID: 5) has started talking.
+Philosopher 5 says: Eh, it's not easy to be a philosopher: eat, think, talk, eat...
+Philosopher (ID: 5) is done talking.
+Philosopher (ID: 1) is done thinking.
+Philosopher (ID: 2) is done thinking.
+Philosopher (ID: 2) has started talking.
+Philosopher 2 says: Eh, it's not easy to be a philosopher: eat, think, talk, eat...
+Philosopher (ID: 2) is done talking.
+Philosopher (ID: 3) is done eating.
+Philosopher (ID: 3) has started thinking.
+Philosopher (ID: 2) has started eating.
+Philosopher (ID: 3) is done thinking.
+Philosopher (ID: 4) is done thinking.
+Philosopher (ID: 2) is done eating.
+Philosopher (ID: 2) has started thinking.
+Philosopher (ID: 1) has started eating.
+Philosopher (ID: 2) is done thinking.
+Philosopher (ID: 2) has started talking.
+Philosopher 2 says: Eh, it's not easy to be a philosopher: eat, think, talk, eat...
+Philosopher (ID: 2) is done talking.
+Philosopher (ID: 1) is done eating.
+Philosopher (ID: 1) has started thinking.
+Philosopher (ID: 4) has started eating.
+Philosopher (ID: 1) is done thinking.
+Philosopher (ID: 1) has started talking.
+Philosopher 1 says: Eh, it's not easy to be a philosopher: eat, think, talk, eat...
+Philosopher (ID: 1) is done talking.
+Philosopher (ID: 4) is done eating.
+Philosopher (ID: 4) has started thinking.
+Philosopher (ID: 1) has started eating.
+Philosopher (ID: 1) is done eating.
+Philosopher (ID: 1) has started thinking.
+Philosopher (ID: 3) has started eating.
+Philosopher (ID: 4) is done thinking.
+Philosopher (ID: 1) is done thinking.
+Philosopher (ID: 1) has started talking.
+Philosopher 1 says: If thee cannot speak, thee must be silent
+Philosopher (ID: 1) is done talking.
+Philosopher (ID: 3) is done eating.
+Philosopher (ID: 3) has started thinking.
+Philosopher (ID: 2) has started eating.
+Philosopher (ID: 2) is done eating.
+Philosopher (ID: 2) has started thinking.
+Philosopher (ID: 5) has started eating.
+Philosopher (ID: 3) is done thinking.
+Philosopher (ID: 3) has started talking.
+Philosopher 3 says: You know, true is false and false is true if you think of it
+Philosopher (ID: 3) is done talking.
+Philosopher (ID: 5) is done eating.
+Philosopher (ID: 5) has started thinking.
+Philosopher (ID: 3) has started eating.
+Philosopher (ID: 2) is done thinking.
+Philosopher (ID: 3) is done eating.
+Philosopher (ID: 3) has started thinking.
+Philosopher (ID: 4) has started eating.
+Philosopher (ID: 5) is done thinking.
+Philosopher (ID: 5) has started talking.
+Philosopher 5 says: If thee cannot speak, thee must be silent
+Philosopher (ID: 5) is done talking.
+Philosopher (ID: 3) is done thinking.
+Philosopher (ID: 4) is done eating.
+Philosopher (ID: 4) has started thinking.
+Philosopher (ID: 2) has started eating.
+Philosopher (ID: 2) is done eating.
+Philosopher (ID: 2) has started thinking.
+Philosopher (ID: 3) has started eating.
+Philosopher (ID: 4) is done thinking.
+Philosopher (ID: 4) has started talking.
+Philosopher 4 says: If thee cannot speak, thee must be silent
+Philosopher (ID: 4) is done talking.
+Philosopher (ID: 2) is done thinking.
+Philosopher (ID: 3) is done eating.
+Philosopher (ID: 3) has started thinking.
+Philosopher (ID: 5) has started eating.
+Philosopher (ID: 3) is done thinking.
+Philosopher (ID: 3) has started talking.
+Philosopher 3 says: My number is 3
+Philosopher (ID: 3) is done talking.
+Philosopher (ID: 5) is done eating.
+Philosopher (ID: 5) has started thinking.
+Philosopher (ID: 2) has started eating.
+Philosopher (ID: 5) is done thinking.
+Philosopher (ID: 5) has started talking.
+Philosopher 5 says: My number is 5
+Philosopher (ID: 5) is done talking.
+Philosopher (ID: 2) is done eating.
+Philosopher (ID: 2) has started thinking.
+Philosopher (ID: 1) has started eating.
+Philosopher (ID: 1) is done eating.
+Philosopher (ID: 1) has started thinking.
+Philosopher (ID: 4) has started eating.
+Philosopher (ID: 4) is done eating.
+Philosopher (ID: 4) has started thinking.
+Philosopher (ID: 5) has started eating.
+Philosopher (ID: 1) is done thinking.
+Philosopher (ID: 2) is done thinking.
+Philosopher (ID: 5) is done eating.
+Philosopher (ID: 5) has started thinking.
+Philosopher (ID: 3) has started eating.
+Philosopher (ID: 4) is done thinking.
+Philosopher (ID: 5) is done thinking.
+Philosopher (ID: 3) is done eating.
+Philosopher (ID: 3) has started thinking.
+Philosopher (ID: 2) has started eating.
+Philosopher (ID: 2) is done eating.
+Philosopher (ID: 2) has started thinking.
+Philosopher (ID: 5) has started eating.
+Philosopher (ID: 5) is done eating.
+Philosopher (ID: 3) is done thinking.
+Philosopher (ID: 1) has started eating.
+Philosopher (ID: 5) has started thinking.
+Philosopher (ID: 5) is done thinking.
+Philosopher (ID: 5) has started talking.
+Philosopher 5 says: You know, true is false and false is true if you think of it
+Philosopher (ID: 5) is done talking.
+Philosopher (ID: 2) is done thinking.
+Philosopher (ID: 1) is done eating.
+Philosopher (ID: 1) has started thinking.
+Philosopher (ID: 4) has started eating.
+Philosopher (ID: 4) is done eating.
+Philosopher (ID: 4) has started thinking.
+Philosopher (ID: 2) has started eating.
+Philosopher (ID: 1) is done thinking.
+Philosopher (ID: 2) is done eating.
+Philosopher (ID: 2) has started thinking.
+Philosopher (ID: 3) has started eating.
+Philosopher (ID: 4) is done thinking.
+Philosopher (ID: 3) is done eating.
+Philosopher (ID: 3) has started thinking.
+Philosopher (ID: 1) has started eating.
+Philosopher (ID: 2) is done thinking.
+Philosopher (ID: 2) has started talking.
+Philosopher 2 says: Eh, it's not easy to be a philosopher: eat, think, talk, eat...
+Philosopher (ID: 2) is done talking.
+Philosopher (ID: 1) is done eating.
+Philosopher (ID: 1) has started thinking.
+Philosopher (ID: 4) has started eating.
+Philosopher (ID: 1) is done thinking.
+Philosopher (ID: 1) has started talking.
+Philosopher 1 says: If thee cannot speak, thee must be silent
+Philosopher (ID: 1) is done talking.
+Philosopher (ID: 3) is done thinking.
+Philosopher (ID: 3) has started talking.
+Philosopher 3 says: You know, true is false and false is true if you think of it
+Philosopher (ID: 3) is done talking.
+Philosopher (ID: 4) is done eating.
+Philosopher (ID: 4) has started thinking.
+Philosopher (ID: 1) has started eating.
+Philosopher (ID: 4) is done thinking.
+Philosopher (ID: 4) has started talking.
+Philosopher 4 says: If thee cannot speak, thee must be silent
+Philosopher (ID: 4) is done talking.
+Philosopher (ID: 1) is done eating.
+Philosopher (ID: 1) has started thinking.
+Philosopher (ID: 3) has started eating.
+Philosopher (ID: 3) is done eating.
+Philosopher (ID: 3) has started thinking.
+Philosopher (ID: 5) has started eating.
+Philosopher (ID: 3) is done thinking.
+Philosopher (ID: 3) has started talking.
+Philosopher 3 says: You know, true is false and false is true if you think of it
+Philosopher (ID: 3) is done talking.
+Philosopher (ID: 5) is done eating.
+Philosopher (ID: 5) has started thinking.
+Philosopher (ID: 4) has started eating.
+Philosopher (ID: 1) is done thinking.
+Philosopher (ID: 4) is done eating.
+Philosopher (ID: 4) has started thinking.
+Philosopher (ID: 3) has started eating.
+Philosopher (ID: 3) is done eating.
+Philosopher (ID: 3) has started thinking.
+Philosopher (ID: 1) has started eating.
+Philosopher (ID: 1) is done eating.
+Philosopher (ID: 1) has started thinking.
+Philosopher (ID: 2) has started eating.
+Philosopher (ID: 3) is done thinking.
+Philosopher (ID: 3) has started talking.
+Philosopher 3 says: 2 + 2 = 5 for extremely large values of 2...
+Philosopher (ID: 3) is done talking.
+Philosopher (ID: 4) is done thinking.
+Philosopher (ID: 1) is done thinking.
+Philosopher (ID: 5) is done thinking.
+Philosopher (ID: 5) has started talking.
+Philosopher 5 says: You know, true is false and false is true if you think of it
+Philosopher (ID: 5) is done talking.
+Philosopher (ID: 2) is done eating.
+Philosopher (ID: 2) has started thinking.
+Philosopher (ID: 4) has started eating.
+Philosopher (ID: 2) is done thinking.
+Philosopher (ID: 2) has started talking.
+Philosopher 2 says: If thee cannot speak, thee must be silent
+Philosopher (ID: 2) is done talking.
+Philosopher (ID: 4) is done eating.
+Philosopher (ID: 4) has started thinking.
+Philosopher (ID: 5) has started eating.
+Philosopher (ID: 5) is done eating.
+Philosopher (ID: 5) has started thinking.
+Philosopher (ID: 2) has started eating.
+Philosopher (ID: 5) is done thinking.
+Philosopher (ID: 5) has started talking.
+Philosopher 5 says: Eh, it's not easy to be a philosopher: eat, think, talk, eat...
+Philosopher (ID: 5) is done talking.
+Philosopher (ID: 4) is done thinking.
+Philosopher (ID: 4) has started talking.
+Philosopher 4 says: Eh, it's not easy to be a philosopher: eat, think, talk, eat...
+Philosopher (ID: 4) is done talking.
+Philosopher (ID: 2) is done eating.
+Philosopher (ID: 2) has started thinking.
+Philosopher (ID: 5) has started eating.
+Philosopher (ID: 2) is done thinking.
+Philosopher (ID: 2) has started talking.
+Philosopher 2 says: If thee cannot speak, thee must be silent
+Philosopher (ID: 2) is done talking.
+Philosopher (ID: 5) is done eating.
+Philosopher (ID: 5) has started thinking.
+Philosopher (ID: 4) has started eating.
+Philosopher (ID: 5) is done thinking.
+Philosopher (ID: 4) is done eating.
+Philosopher (ID: 4) has started thinking.
+Philosopher (ID: 5) has started eating.
+Philosopher (ID: 4) is done thinking.
+Philosopher (ID: 5) is done eating.
+Philosopher (ID: 5) has started thinking.
+Philosopher (ID: 5) is done thinking.
+All philosophers have left. System terminates normally.
