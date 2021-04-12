@@ -1,5 +1,7 @@
 import common.BaseThread;
 
+import java.util.Random;
+
 /**
  * Class Philosopher.
  * Outlines main subrutines of our virtual philosopher.
@@ -108,11 +110,17 @@ public class Philosopher extends BaseThread
 			 * A decision is made at random whether this particular
 			 * philosopher is about to say something terribly useful.
 			 */
-			if(true == false)
+
+			// used for random decision
+			Random talk = new Random();
+
+			if(talk.nextBoolean())
 			{
-				// Some monitor ops down here...
+				DiningPhilosophers.soMonitor.requestTalk();
+
 				talk();
-				// ...
+
+				DiningPhilosophers.soMonitor.endTalk();
 			}
 
 			Thread.yield();

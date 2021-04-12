@@ -12,6 +12,13 @@ public class Monitor
 	 * ------------
 	 */
 
+	int chopsticks;
+
+	enum Status {
+		thinking,
+		hungry,
+		eating
+	}
 
 	/**
 	 * Constructor
@@ -19,6 +26,7 @@ public class Monitor
 	public Monitor(int piNumberOfPhilosophers)
 	{
 		// TODO: set appropriate number of chopsticks based on the # of philosophers
+
 	}
 
 	/*
