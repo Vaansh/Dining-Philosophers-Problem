@@ -21,7 +21,6 @@ public class Monitor
     public boolean talk;
     public  int philosophers;
     public Status[] states;
-    public boolean[] chopsticks;
 
     /**
      * Constructor
@@ -30,13 +29,8 @@ public class Monitor
     {
         talk = false;
         philosophers = piNumberOfPhilosophers;
-
-        // if there is one philosopher, set chopsticks to two
-        chopsticks = new boolean[philosophers != 1 ? philosophers : philosophers + 1];
         states = new Status[philosophers];
-
         Arrays.fill(states, Status.THINKING);
-        Arrays.fill(chopsticks, false);
     }
 
     /*
@@ -46,13 +40,13 @@ public class Monitor
      */
     public synchronized void test(final int piTID)
     {
-		if(states[Math.abs((piTID-1)%philosophers)] != Status.EATING
-			&& states[Math.abs((piTID+1)%philosophers)] != Status.EATING
-			&& states[Math.abs((piTID)%philosophers)] == Status.HUNGRY)
-		{
-			states[piTID] = Status.EATING;
-			notifyAll();
-		}
+        if(states[Math.abs((piTID-1)%philosophers)] != Status.EATING
+                && states[Math.abs((piTID+1)%philosophers)] != Status.EATING
+                && states[Math.abs((piTID)%philosophers)] == Status.HUNGRY)
+        {
+            states[piTID] = Status.EATING;
+            notifyAll();
+        }
     }
     /**
      * Grants request (returns) to eat when both chopsticks/forks are available.
@@ -99,20 +93,20 @@ public class Monitor
      */
     public synchronized void requestTalk()
     {
-       while(talk)
-       {
-           try
-           {
-               wait();
-           }
-           catch (InterruptedException e)
-           {
-               e.printStackTrace();
-           }
-       }
+        while(talk)
+        {
+            try
+            {
+                wait();
+            }
+            catch (InterruptedException e)
+            {
+                e.printStackTrace();
+            }
+        }
 
-       talk = true;
-       notifyAll();
+        talk = true;
+        notifyAll();
     }
 
     /**
