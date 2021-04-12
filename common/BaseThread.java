@@ -9,11 +9,6 @@ import java.util.Random;
  * An attempt to maintain an automatic unique TID (thread ID)
  * among all the derivatives and allow setting your own if needed.
  * Plus some methods for the sync exercises.
- *
- * $Revision: 1.2 $
- * $Last Revision Date: 2021/03/22 $
- *
- * @author Serguei A. Mokhov, mokhov@cs.concordia.ca
  */
 public class BaseThread extends Thread
 {
@@ -22,7 +17,6 @@ public class BaseThread extends Thread
 	 * Data members
 	 * ------------
 	 */
-
 	/**
 	 * Preserves value across all instances
 	 */
@@ -43,7 +37,6 @@ public class BaseThread extends Thread
 	 * Constructors
 	 * ------------
 	 */
-
 	/**
 	 * Default
 	 */
