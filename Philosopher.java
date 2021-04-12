@@ -5,8 +5,6 @@ import java.util.Random;
 /**
  * Class Philosopher.
  * Outlines main subrutines of our virtual philosopher.
- *
- * @author Serguei A. Mokhov, mokhov@cs.concordia.ca
  */
 public class Philosopher extends BaseThread
 {
@@ -106,7 +104,6 @@ public class Philosopher extends BaseThread
             think();
 
             /*
-             * TODO:
              * A decision is made at random whether this particular
              * philosopher is about to say something terribly useful.
              */

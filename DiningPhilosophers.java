@@ -1,8 +1,6 @@
 /**
  * Class DiningPhilosophers
  * The main starter.
- *
- * @author Serguei A. Mokhov, mokhov@cs.concordia.ca
  */
 public class DiningPhilosophers
 {
@@ -11,7 +9,6 @@ public class DiningPhilosophers
      * Data members
      * ------------
      */
-
     /**
      * This default may be overridden from the command line
      */
@@ -42,7 +39,6 @@ public class DiningPhilosophers
         try
         {
             /*
-             * TODO:
              * Should be settable from the command line
              * or the default if no arguments supplied.
              */
