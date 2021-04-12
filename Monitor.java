@@ -3,8 +3,6 @@ import java.util.Arrays;
 /**
  * Class Monitor
  * To synchronize dining philosophers.
- *
- * @author Serguei A. Mokhov, mokhov@cs.concordia.ca
  */
 public class Monitor
 {
@@ -13,14 +11,37 @@ public class Monitor
      * Data members
      * ------------
      */
-
-    public enum Status {
-        THINKING, HUNGRY, EATING
-    }
-
     public boolean talk;
     public  int philosophers;
-    public Status[] states;
+    public Chopstick[] Chopsticks;
+
+    class Chopstick
+    {
+        boolean free;
+        int prevuser;
+
+        Chopstick()
+        {
+            free = true;
+            prevuser = DiningPhilosophers.DEFAULT_NUMBER_OF_PHILOSOPHERS + 1;
+        }
+
+        void up(final int piTID)
+        {
+            free = false;
+            prevuser = piTID;
+        }
+
+        void down(final int piTID)
+        {
+            free = true;
+        }
+
+        boolean unavailable(final int piTID)
+        {
+            return (piTID != prevuser) && !free;
+        }
+    }
 
     /**
      * Constructor
@@ -29,50 +50,51 @@ public class Monitor
     {
         talk = false;
         philosophers = piNumberOfPhilosophers;
-        states = new Status[philosophers];
-        Arrays.fill(states, Status.THINKING);
+        Chopsticks = new Chopstick[philosophers];
+        Arrays.fill(Chopsticks, new Chopstick());
     }
 
-    /*
-     * -------------------------------
-     * User-defined monitor procedures
-     * -------------------------------
-     */
-    public synchronized void test(final int piTID)
-    {
-        if(states[Math.abs((piTID-1)%philosophers)] != Status.EATING
-                && states[Math.abs((piTID+1)%philosophers)] != Status.EATING
-                && states[Math.abs((piTID)%philosophers)] == Status.HUNGRY)
-        {
-            states[piTID] = Status.EATING;
-            notifyAll();
-        }
-    }
     /**
      * Grants request (returns) to eat when both chopsticks/forks are available.
      * Else forces the philosopher to wait()
      */
     public synchronized void pickUp(final int piTID)
     {
-        int index = piTID - 1;
-        states[Math.abs(index%philosophers)] = Status.HUNGRY;
+        Chopstick leftPhilosopher = Chopsticks[piTID-1], rightPhilosopher = Chopsticks[piTID%philosophers];
 
-        test(index);
-
-        if(states[Math.abs(index%philosophers)] != Status.EATING)
+        while(true)
         {
-            try
+            // chopstick(s) are in use
+            if ((leftPhilosopher.unavailable(piTID) || rightPhilosopher.unavailable(piTID)))
             {
-                wait();
+                // pick up as many chopsticks as you can
+                try
+                {
+                    if(leftPhilosopher.free && leftPhilosopher.prevuser!=piTID)
+                    {
+                        leftPhilosopher.up(piTID);
+                    }
+
+                    if(rightPhilosopher.free && rightPhilosopher.prevuser!=piTID)
+                    {
+                        rightPhilosopher.up(piTID);
+                    }
+
+                    wait();
+                }
+                catch (InterruptedException e)
+                {
+                    e.printStackTrace();
+                }
             }
-            catch (InterruptedException e)
+            // free chopsticks
+            else
             {
-                e.printStackTrace();
+                leftPhilosopher.up(piTID);
+                rightPhilosopher.up(piTID);
+                break;
             }
         }
-
-        states[Math.abs(index%philosophers)] = Status.EATING;
-        notifyAll();
     }
 
     /**
@@ -81,10 +103,9 @@ public class Monitor
      */
     public synchronized void putDown(final int piTID)
     {
-        int index = piTID - 1;
-        states[Math.abs(index%philosophers)] = Status.THINKING;
-        test(Math.abs((index-1)%philosophers));
-        test(Math.abs((index+1)%philosophers));
+        Chopsticks[piTID-1].down(piTID);
+        Chopsticks[piTID%philosophers].down(piTID);
+        notifyAll();
     }
 
     /**
@@ -93,20 +114,25 @@ public class Monitor
      */
     public synchronized void requestTalk()
     {
-        while(talk)
+        while(true)
         {
-            try
+            if(talk)
             {
-                wait();
+                try
+                {
+                    wait();
+                }
+                catch (InterruptedException e)
+                {
+                    e.printStackTrace();
+                }
             }
-            catch (InterruptedException e)
+            else
             {
-                e.printStackTrace();
+                talk = true;
+                break;
             }
         }
-
-        talk = true;
-        notifyAll();
     }
 
     /**
