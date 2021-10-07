@@ -1,149 +1,113 @@
 import java.util.Arrays;
 
-/**
- * Class Monitor
- * To synchronize dining philosophers.
- */
-public class Monitor
-{
-    /*
-     * ------------
-     * Data members
-     * ------------
-     */
-    public boolean talk;
-    public  int philosophers;
-    public Chopstick[] Chopsticks;
+/** Class Monitor To synchronize dining philosophers. */
+public class Monitor {
+  /*
+   * ------------
+   * Data members
+   * ------------
+   */
+  public boolean talk;
+  public int philosophers;
+  public Chopstick[] Chopsticks;
 
-    class Chopstick
-    {
-        boolean free;
-        int prevuser;
+  /** Constructor */
+  public Monitor(int piNumberOfPhilosophers) {
+    talk = false;
+    philosophers = piNumberOfPhilosophers;
+    Chopsticks = new Chopstick[philosophers];
+    Arrays.fill(Chopsticks, new Chopstick());
+  }
 
-        Chopstick()
-        {
-            free = true;
-            prevuser = DiningPhilosophers.DEFAULT_NUMBER_OF_PHILOSOPHERS + 1;
+  /**
+   * Grants request (returns) to eat when both chopsticks/forks are available. Else forces the
+   * philosopher to wait()
+   */
+  public synchronized void pickUp(final int piTID) {
+    Chopstick leftPhilosopher = Chopsticks[piTID - 1],
+        rightPhilosopher = Chopsticks[piTID % philosophers];
+
+    while (true) {
+      // chopstick(s) are in use
+      if ((leftPhilosopher.unavailable(piTID) || rightPhilosopher.unavailable(piTID))) {
+        // pick up as many chopsticks as you can
+        try {
+          if (leftPhilosopher.free && leftPhilosopher.prevuser != piTID) {
+            leftPhilosopher.up(piTID);
+          }
+
+          if (rightPhilosopher.free && rightPhilosopher.prevuser != piTID) {
+            rightPhilosopher.up(piTID);
+          }
+
+          wait();
+        } catch (InterruptedException e) {
+          e.printStackTrace();
         }
+      }
+      // free chopsticks
+      else {
+        leftPhilosopher.up(piTID);
+        rightPhilosopher.up(piTID);
+        break;
+      }
+    }
+  }
 
-        void up(final int piTID)
-        {
-            free = false;
-            prevuser = piTID;
-        }
+  /**
+   * When a given philosopher's done eating, they put the chopsticks/forks down and let others know
+   * they are available.
+   */
+  public synchronized void putDown(final int piTID) {
+    Chopsticks[piTID - 1].down(piTID);
+    Chopsticks[piTID % philosophers].down(piTID);
+    notifyAll();
+  }
 
-        void down(final int piTID)
-        {
-            free = true;
+  /** Only one philosopher at a time is allowed to philosophy (while she is not eating). */
+  public synchronized void requestTalk() {
+    while (true) {
+      if (talk) {
+        try {
+          wait();
+        } catch (InterruptedException e) {
+          e.printStackTrace();
         }
+      } else {
+        talk = true;
+        break;
+      }
+    }
+  }
 
-        boolean unavailable(final int piTID)
-        {
-            return (piTID != prevuser) && !free;
-        }
+  /** When one philosopher is done talking stuff, others can feel free to start talking. */
+  public synchronized void endTalk() {
+    talk = false;
+    notifyAll();
+  }
+
+  class Chopstick {
+    boolean free;
+    int prevuser;
+
+    Chopstick() {
+      free = true;
+      prevuser = DiningPhilosophers.DEFAULT_NUMBER_OF_PHILOSOPHERS + 1;
     }
 
-    /**
-     * Constructor
-     */
-    public Monitor(int piNumberOfPhilosophers)
-    {
-        talk = false;
-        philosophers = piNumberOfPhilosophers;
-        Chopsticks = new Chopstick[philosophers];
-        Arrays.fill(Chopsticks, new Chopstick());
+    void up(final int piTID) {
+      free = false;
+      prevuser = piTID;
     }
 
-    /**
-     * Grants request (returns) to eat when both chopsticks/forks are available.
-     * Else forces the philosopher to wait()
-     */
-    public synchronized void pickUp(final int piTID)
-    {
-        Chopstick leftPhilosopher = Chopsticks[piTID-1], rightPhilosopher = Chopsticks[piTID%philosophers];
-
-        while(true)
-        {
-            // chopstick(s) are in use
-            if ((leftPhilosopher.unavailable(piTID) || rightPhilosopher.unavailable(piTID)))
-            {
-                // pick up as many chopsticks as you can
-                try
-                {
-                    if(leftPhilosopher.free && leftPhilosopher.prevuser!=piTID)
-                    {
-                        leftPhilosopher.up(piTID);
-                    }
-
-                    if(rightPhilosopher.free && rightPhilosopher.prevuser!=piTID)
-                    {
-                        rightPhilosopher.up(piTID);
-                    }
-
-                    wait();
-                }
-                catch (InterruptedException e)
-                {
-                    e.printStackTrace();
-                }
-            }
-            // free chopsticks
-            else
-            {
-                leftPhilosopher.up(piTID);
-                rightPhilosopher.up(piTID);
-                break;
-            }
-        }
+    void down(final int piTID) {
+      free = true;
     }
 
-    /**
-     * When a given philosopher's done eating, they put the chopsticks/forks down
-     * and let others know they are available.
-     */
-    public synchronized void putDown(final int piTID)
-    {
-        Chopsticks[piTID-1].down(piTID);
-        Chopsticks[piTID%philosophers].down(piTID);
-        notifyAll();
+    boolean unavailable(final int piTID) {
+      return (piTID != prevuser) && !free;
     }
-
-    /**
-     * Only one philosopher at a time is allowed to philosophy
-     * (while she is not eating).
-     */
-    public synchronized void requestTalk()
-    {
-        while(true)
-        {
-            if(talk)
-            {
-                try
-                {
-                    wait();
-                }
-                catch (InterruptedException e)
-                {
-                    e.printStackTrace();
-                }
-            }
-            else
-            {
-                talk = true;
-                break;
-            }
-        }
-    }
-
-    /**
-     * When one philosopher is done talking stuff, others
-     * can feel free to start talking.
-     */
-    public synchronized void endTalk()
-    {
-        talk = false;
-        notifyAll();
-    }
+  }
 }
 
 // EOF

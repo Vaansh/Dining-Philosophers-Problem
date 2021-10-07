@@ -1,2 +1,8 @@
-
 .DS_Store
+.idea/.gitignore
+.idea/codeStyles/codeStyleConfig.xml
+.idea/google-java-format.xml
+.idea/misc.xml
+.idea/modules.xml
+.idea/vcs.xml
+Dining-Philosophers-Problem.iml
